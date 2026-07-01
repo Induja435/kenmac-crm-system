@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-headline: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, monospace;
+
+  /* Professional Polish Theme Custom Variable Overlays */
+  --color-primary: #2563eb;               /* Blue 600 */
+  --color-primary-container: #0f172a;     /* Slate 900 for Sidebar */
+  --color-primary-fixed: #dbeafe;          /* Blue 100 */
+  --color-primary-fixed-dim: #93c5fd;      /* Blue 300 */
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #94a3b8;   /* Slate 400 */
+  --color-on-primary-fixed: #1e3a8a;       /* Blue 900 */
+  --color-on-primary-fixed-variant: #111827;
+  
+  --color-secondary: #2563eb;             /* Blue 600 */
+  --color-secondary-container: #eff6ff;   /* Blue 50 */
+  --color-secondary-fixed: #bfdbfe;       /* Blue 200 */
+  --color-secondary-fixed-dim: #60a5fa;   /* Blue 400 */
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #1e40af; /* Blue 800 */
+  --color-on-secondary-fixed: #1e3a8a;
+  --color-on-secondary-fixed-variant: #1d4ed8;
+
+  --color-surface: #ffffff;               /* Clean White */
+  --color-background: #f8fafc;            /* Slate 50 */
+  --color-on-background: #0f172a;         /* Slate 900 */
+  --color-on-surface: #0f172a;            /* Slate 900 */
+  --color-on-surface-variant: #475569;    /* Slate 600 */
+  
+  --color-outline: #94a3b8;               /* Slate 400 */
+  --color-outline-variant: #e2e8f0;       /* Slate 200 list/border lines */
+
+  --color-surface-container-lowest: #ffffff; /* Card/Modal Background */
+  --color-surface-container-low: #f8fafc;    /* Clean inputs & low-priority list cells */
+  --color-surface-container: #f1f5f9;        /* Headers / generic containers */
+  --color-surface-container-high: #e2e8f0;
+  --color-surface-container-highest: #cbd5e1;
+
+  --color-surface-bright: #ffffff;
+  --color-surface-dim: #e2e8f0;
+  --color-surface-tint: #2563eb;
+  
+  --color-inverse-surface: #0f172a;
+  --color-inverse-on-surface: #f8fafc;
+  --color-inverse-primary: #93c5fd;
+
+  --color-error: #ef4444;                 /* Red 500 */
+  --color-error-container: #fee2e2;       /* Red 100 */
+  --color-on-error: #ffffff;
+  --color-on-error-container: #991b1b;
+
+  --color-tertiary: #475569;
+  --color-tertiary-container: #f1f5f9;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #0f172a;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-background text-on-surface font-sans;
+  }
+}
+
+.bg-mesh {
+  background-color: #f8fafc;
+  background-image: 
+      radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(100, 116, 139, 0.03) 0px, transparent 50%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c6cf;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #74777f;
+}
+

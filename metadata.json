@@ -1,0 +1,6 @@
+{
+  "name": "Kinetic Tech Portal",
+  "description": "High-performance enterprise CRM and consultancy hub for financial tracking, project milestones, tasks, and knowledge bases.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
